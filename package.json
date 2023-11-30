@@ -93,3 +93,18 @@
     "typescript-plugin-css-modules": "^3.4.0"
   }
 }
+{
+  "name": "continuous-test-code-coverage-guide",
+  "scripts": {
+    "start": "webpack",
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+  },
+  ...
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
+    ...
+  }
+}
